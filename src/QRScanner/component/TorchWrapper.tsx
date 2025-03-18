@@ -1,7 +1,7 @@
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 
 const TorchWrapper = (props: any) => {
-  const TORCH_ICON = require('../../assets/FlashIcon.png');
+  const TORCH_ICON = require('../../assets/TorchIcon.png');
   const { torchOn, setTorchOff, style, ...restProps } = props;
   const getImageStyle = (isTorchOn: boolean) => {
     return {
@@ -25,9 +25,9 @@ const TorchWrapper = (props: any) => {
 const styles = StyleSheet.create({
   header: {
     position: 'absolute',
-    top: 0,
+    top: 60,
     left: 0,
-    right: 0,
+    right: -20,
   },
   endOptions: {
     alignSelf: 'flex-end',

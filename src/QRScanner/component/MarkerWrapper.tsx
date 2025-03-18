@@ -44,7 +44,7 @@ const DefaultMarker = ({ children, ...props }: any) => {
   console.log('🚀 ~ DefaultMarker ~ props:', props);
 
   return (
-    <View style={styles.overlay}>
+    <View style={styles.overlay} pointerEvents="none">
       <View style={styles.topOverlay} />
       <View style={styles.middleContainer}>
         <View style={styles.sideOverlay} />

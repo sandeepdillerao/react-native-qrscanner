@@ -113,7 +113,7 @@ const QRScanner = (props: QRScannerProps) => {
   return (
     <View style={styles.cameraContainer}>
       <Camera
-        style={styles.cameraView}
+        style={StyleSheet.absoluteFill}
         codeScanner={codeScanner}
         device={device}
         torch={torchOn ? 'on' : 'off'}
